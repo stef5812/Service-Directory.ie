@@ -1,0 +1,190 @@
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/libs/images/background.png');
+            background-size:     cover;                      /* <------ */
+            background-repeat:   no-repeat;
+            background-position: center center;               
+            background-attachment: fixed;
+            display:flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+
+/* CSS for the fixed navigation */
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Change to your preferred background color */
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+/* Adjust the styles of your navigation links as needed */
+.navbar-fixed-top nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff; /* Change to white */
+}
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            .nav {
+                font-size: 10px; /* Decrease the font size for mobile devices */
+            }
+
+            .service-item {
+                background: rgba(255, 255, 255, 0.1);
+                border: 2px solid #ccc; /* Add a border with a color of your choice */
+                padding: 20px; /* Add padding for spacing */
+                border-radius: 10px; /* Add rounded corners for a 3D effect */
+                text-align: center; /* Center-align the content */
+                transition: transform 0.3s; /* Add a smooth transform effect on hover */
+                margin-bottom: 10px;
+            }            
+        }        
+
+        main {
+            text-align: center;
+            padding: 20px;
+            flex: 2;
+        }
+
+        .map-button {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 12px;
+            cursor: pointer;
+        }      
+        
+        .section-frame {
+            border: 2px solid #0074d9;
+            padding: 20px;
+            margin: 20px;
+        } 
+
+        
+        .row.text-center {
+            margin-top: 30px;
+        }
+
+/* CSS for the service icon/logo */
+.service-icon {
+    max-width: 200px; /* Set the maximum width for the image/logo */
+    margin-bottom: 10px; /* Add margin below the image/logo */
+}
+
+/* CSS to make the images larger */
+.larger-image {
+    width: 150px; /* Adjust the width to your preferred size */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}        
+
+
+/* CSS for the service items */
+.service-item {
+    background: rgba(0, 151, 19, 0.1);
+    border: 2px solid #ccc; /* Add a border with a color of your choice */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners for a 3D effect */
+    text-align: center; /* Center-align the content */
+    transition: transform 0.3s; /* Add a smooth transform effect on hover */
+    margin-bottom: 10px;
+    filter: alpha(opacity=30);
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Scale up the element on hover for a 3D effect */
+    background: rgba(255, 255, 255, 50);
+}
+
+
+/* Other styles for headings and text can be customized as needed */
+.service-item h4 {
+    font-weight: bold;
+}
+
+/* Add styles for the text content */
+.service-item p {
+    font-size: 14px;
+}
+
+/* Sticky Footer CSS */
+.sticky-footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Add padding for spacing */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensure it's above other content */
+}
+
+/* Style footer content similar to header */
+.sticky-footer a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add spacing between links */
+}
+
+.sticky-footer a:hover {
+    text-decoration: underline; /* Add underline on hover for links */
+}
+
+
+/* CSS to reduce the footer text size */
+.footer {
+    font-size: 14px; /* Adjust the font size to your preference */
+}
+
+/* Add more specific CSS rules if needed for different elements within the footer */
+.footer a {
+    font-size: 14px; /* Adjust the font size for links */
+}
+
+.contact-container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
